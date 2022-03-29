@@ -4,7 +4,7 @@
   "description": "Monsternary website - GameFi and NFT Marketplace in the multiverse of madness",
   "main": "index.js",
   "scripts": {
-    "build:watch": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch"
+    "dev": "npx tailwindcss -i ./src/style.css -o ./dist/css/style.css --watch"
   },
   "repository": {
     "type": "git",

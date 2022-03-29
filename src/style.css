@@ -1,10 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
+    html { @apply scroll-smooth; }
+
     html,
-    body {
-        @apply m-0 p-0;
+    body { @apply m-0 p-0; }
+
+    body { @apply font-inter text-base; }
+
+    a { @apply font-inter text-base; }
+}
+
+@layer components {
+    .btn {
+        @apply transition ease-in-out duration-300 font-bold text-[12px] leading-5 text-white py-[16px] px-[32px];
+        background-image: url('../images/bg-btn.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .btn:hover {
+        background-image: url('../images/bg-btn-hover.svg');
+    }
+    .btn.btn-lg {
+        @apply py-6 px-12 text-base;
+        background-image: url('../images/bg-btn-lg.svg');
+    }
+    .btn.btn-lg:hover {
+        background-image: url('../images/bg-btn-lg-hover.svg');
+    }
+
+    .air {
+        animation: bounce 2s infinite;
+    }
+
+    .earth {
+        animation: bounce 4s infinite;
+    }
+
+    .water {
+        animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+          transform: translateY(-25%);
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+          transform: translateY(0);
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
     }
 }
