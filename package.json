@@ -1,0 +1,30 @@
+{
+  "name": "monsternary",
+  "version": "1.0.0",
+  "description": "Monsternary website - GameFi and NFT Marketplace in the multiverse of madness",
+  "main": "index.js",
+  "scripts": {
+    "build:watch": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monsternary/monsternary.git"
+  },
+  "keywords": [
+    "crypto",
+    "gameFi",
+    "NFT",
+    "game",
+    "monster",
+    "token"
+  ],
+  "author": "Monsternary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monsternary/monsternary/issues"
+  },
+  "homepage": "https://github.com/monsternary/monsternary#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
