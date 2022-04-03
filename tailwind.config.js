@@ -9,6 +9,7 @@ module.exports = {
         'primary': '#ED313F',
         'secondary': '#EDECE5',
         'text': '#040917',
+        'text-alt': '#634E22',
       },
     },
   },

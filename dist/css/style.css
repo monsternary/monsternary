@@ -435,6 +435,7 @@ html, body{
 }
 
 body{
+  overflow-x: hidden;
   font-family: Inter, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -563,24 +564,85 @@ a{
   background-image: url('../images/bg-btn-lg-hover.svg');
 }
 
-.air {
-  -webkit-animation: bounce 2s infinite;
-          animation: bounce 2s infinite;
+.animate-monster-liquion {
+  -webkit-animation: bounceX 4s infinite;
+          animation: bounceX 4s infinite;
 }
 
-.earth {
-  -webkit-animation: bounce 4s infinite;
-          animation: bounce 4s infinite;
+.animate-monster-burno {
+  -webkit-animation: bounceXmin 4s infinite;
+          animation: bounceXmin 4s infinite;
 }
 
-.water {
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
+.animate-monster-triba {
+  -webkit-animation: bounceping 6s infinite;
+          animation: bounceping 6s infinite;
+}
+
+.animate-monster-minks {
+  -webkit-animation: minks 4s infinite;
+          animation: minks 4s infinite;
+}
+
+@-webkit-keyframes minks {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+
+  50% {
+    transform: translateY(-1%) scale(1.1);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+}
+
+@keyframes minks {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+
+  50% {
+    transform: translateY(-1%) scale(1.1);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+}
+
+@-webkit-keyframes bounceping {
+  0%, 100% {
+    transform: translateX(-20%);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+
+  50% {
+    transform: translateX(5%);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+}
+
+@keyframes bounceping {
+  0%, 100% {
+    transform: translateX(-20%);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+
+  50% {
+    transform: translateX(5%);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
 }
 
 @-webkit-keyframes bounce {
   0%, 100% {
-    transform: translateY(-25%);
+    transform: translateY(-5%);
     -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
             animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
@@ -594,7 +656,7 @@ a{
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(-25%);
+    transform: translateY(-5%);
     -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
             animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
@@ -606,12 +668,76 @@ a{
   }
 }
 
+@-webkit-keyframes bounceX {
+  0%, 100% {
+    transform: translateX(-5%);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+
+  50% {
+    transform: translateX(0);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+}
+
+@keyframes bounceX {
+  0%, 100% {
+    transform: translateX(-5%);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+
+  50% {
+    transform: translateX(0);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+}
+
+@-webkit-keyframes bounceXmin {
+  0%, 100% {
+    transform: translateX(5%);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+
+  50% {
+    transform: translateX(0);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+}
+
+@keyframes bounceXmin {
+  0%, 100% {
+    transform: translateX(5%);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+
+  50% {
+    transform: translateX(0);
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+  }
+}
+
 .absolute{
   position: absolute;
 }
 
 .relative{
   position: relative;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
 }
 
 .top-\[165px\]{
@@ -624,6 +750,14 @@ a{
 
 .top-\[55px\]{
   top: 55px;
+}
+
+.z-30{
+  z-index: 30;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .col-span-12{
@@ -640,10 +774,6 @@ a{
 
 .col-span-5{
   grid-column: span 5 / span 5;
-}
-
-.col-span-4{
-  grid-column: span 4 / span 4;
 }
 
 .col-span-3{
@@ -671,6 +801,38 @@ a{
   margin-right: auto;
 }
 
+.-mt-\[11rem\]{
+  margin-top: -11rem;
+}
+
+.ml-\[200px\]{
+  margin-left: 200px;
+}
+
+.-mt-\[210px\]{
+  margin-top: -210px;
+}
+
+.mr-\[200px\]{
+  margin-right: 200px;
+}
+
+.mt-\[50px\]{
+  margin-top: 50px;
+}
+
+.-ml-\[80px\]{
+  margin-left: -80px;
+}
+
+.mt-\[30px\]{
+  margin-top: 30px;
+}
+
+.-mr-24{
+  margin-right: -6rem;
+}
+
 .mb-14{
   margin-bottom: 3.5rem;
 }
@@ -687,16 +849,28 @@ a{
   margin-bottom: 2.5rem;
 }
 
+.-mb-\[205px\]{
+  margin-bottom: -205px;
+}
+
 .mb-16{
   margin-bottom: 4rem;
 }
 
-.-mt-52{
-  margin-top: -13rem;
+.-mt-\[205px\]{
+  margin-top: -205px;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
+.ml-0{
+  margin-left: 0px;
+}
+
+.-mt-28{
+  margin-top: -7rem;
+}
+
+.-ml-52{
+  margin-left: -13rem;
 }
 
 .mb-3{
@@ -715,6 +889,34 @@ a{
   margin-right: 0.5rem;
 }
 
+.-mr-36{
+  margin-right: -9rem;
+}
+
+.-mb-8{
+  margin-bottom: -2rem;
+}
+
+.-mb-\[225px\]{
+  margin-bottom: -225px;
+}
+
+.-mt-\[225px\]{
+  margin-top: -225px;
+}
+
+.-mb-4{
+  margin-bottom: -1rem;
+}
+
+.-mr-28{
+  margin-right: -7rem;
+}
+
+.-ml-36{
+  margin-left: -9rem;
+}
+
 .flex{
   display: flex;
 }
@@ -723,24 +925,20 @@ a{
   display: grid;
 }
 
-.h-\[446px\]{
-  height: 446px;
+.h-full{
+  height: 100%;
 }
 
-.h-\[350px\]{
-  height: 350px;
+.h-60{
+  height: 15rem;
+}
+
+.h-64{
+  height: 16rem;
 }
 
 .h-8{
   height: 2rem;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
-.w-\[446px\]{
-  width: 446px;
 }
 
 .w-full{
@@ -749,6 +947,28 @@ a{
 
 .w-8{
   width: 2rem;
+}
+
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@-webkit-keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin{
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
 }
 
 .grid-cols-12{
@@ -802,28 +1022,24 @@ a{
        column-gap: 1.5rem;
 }
 
-.rounded-xl{
-  border-radius: 0.75rem;
-}
-
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(237 49 63 / var(--tw-bg-opacity));
 }
 
-.bg-secondary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 236 229 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#EDE3DD\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 227 221 / var(--tw-bg-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#EAEEF4\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 238 244 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#664939\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 73 57 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-5{
@@ -834,12 +1050,12 @@ a{
   background-size: cover;
 }
 
-.bg-bottom{
-  background-position: bottom;
+.bg-contain{
+  background-size: contain;
 }
 
-.bg-center{
-  background-position: center;
+.bg-bottom{
+  background-position: bottom;
 }
 
 .bg-no-repeat{
@@ -855,9 +1071,19 @@ a{
   padding-bottom: 2rem;
 }
 
-.py-52{
-  padding-top: 13rem;
-  padding-bottom: 13rem;
+.py-48{
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.py-36{
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.py-72{
+  padding-top: 18rem;
+  padding-bottom: 18rem;
 }
 
 .py-10{
@@ -865,28 +1091,33 @@ a{
   padding-bottom: 2.5rem;
 }
 
-.pt-\[191px\]{
-  padding-top: 191px;
+.py-56{
+  padding-top: 14rem;
+  padding-bottom: 14rem;
 }
 
-.pb-\[294px\]{
-  padding-bottom: 294px;
+.pt-\[280px\]{
+  padding-top: 280px;
 }
 
-.pt-40{
-  padding-top: 10rem;
-}
-
-.pb-\[350px\]{
-  padding-bottom: 350px;
+.pb-\[270px\]{
+  padding-bottom: 270px;
 }
 
 .pt-80{
   padding-top: 20rem;
 }
 
-.pb-\[343px\]{
-  padding-bottom: 343px;
+.pb-96{
+  padding-bottom: 24rem;
+}
+
+.pt-36{
+  padding-top: 9rem;
+}
+
+.pb-80{
+  padding-bottom: 20rem;
 }
 
 .text-center{
@@ -924,6 +1155,12 @@ a{
   opacity: 0.8;
 }
 
+.backdrop-blur-sm{
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 .transition{
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -938,6 +1175,13 @@ a{
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animation Duration */
+
+.animation-duration-5 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .hover\:-translate-y-1:hover{
@@ -969,4 +1213,10 @@ a{
 
 .hover\:opacity-100:hover{
   opacity: 1;
+}
+
+@media (min-width: 1024px){
+  .lg\:-ml-28{
+    margin-left: -7rem;
+  }
 }

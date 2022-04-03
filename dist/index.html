@@ -11,8 +11,8 @@
 <body>
 
 <!--start:header-->
-<header class="bg-primary bg-opacity-5 bg-no-repeat bg-bottom bg-cover h-screen" style="background-image: url('images/hero.svg');">
-    <nav class="py-8">
+<header class="bg-primary bg-opacity-5 bg-no-repeat bg-bottom bg-cover" style="background-image: url('images/bg-hero.svg');">
+    <nav class="bg-white bg-opacity-5 backdrop-blur-sm py-8">
         <div class="container mx-auto">
             <div class="grid grid-cols-12">
                 <div class="col-span-12 flex items-center justify-between">
@@ -20,11 +20,11 @@
                         <a href="index.html"><img src="images/logo.svg" alt="Monsternary"></a>
                     </div>
                     <ul class="flex items-center gap-x-8 text-text">
-                        <li><a href="#" class="transition duration-300 ease-in-out hover:text-primary">Marketplace</a></li>
-                        <li><a href="#" class="transition duration-300 ease-in-out hover:text-primary">Farm</a></li>
-                        <li><a href="#" class="transition duration-300 ease-in-out hover:text-primary">Road Map</a></li>
-                        <li><a href="#" class="transition duration-300 ease-in-out hover:text-primary">Token</a></li>
-                        <li><a href="#" class="transition duration-300 ease-in-out hover:text-primary">Litepaper</a></li>
+                        <li><a href="#" class="transition duration-300 ease-in-out text-white hover:text-primary">Marketplace</a></li>
+                        <li><a href="#" class="transition duration-300 ease-in-out text-white hover:text-primary">Farm</a></li>
+                        <li><a href="#" class="transition duration-300 ease-in-out text-white hover:text-primary">Road Map</a></li>
+                        <li><a href="#" class="transition duration-300 ease-in-out text-white hover:text-primary">Token</a></li>
+                        <li><a href="#" class="transition duration-300 ease-in-out text-white hover:text-primary">Litepaper</a></li>
                     </ul>
                     <div>
                         <a href="#" class="btn">Get Started</a>
@@ -33,11 +33,28 @@
             </div>
         </div>
     </nav>
-    <section class="pt-[191px] pb-[294px]">
+    <section class="pt-[280px] pb-[270px]">
         <div class="container mx-auto">
             <div class="grid grid-cols-12">
+                <div class="col-span-12">
+                    <div class="flex justify-center relative">
+                        <img src="images/globe.svg" class="absolute animate-spin animation-duration-5 -mt-[11rem]" alt="">
+                    </div>
+                    <div class="monster-liquion relative">
+                        <img src="images/monster-liquion.svg" class="animate-monster-liquion absolute ml-[200px] -mt-[210px]" alt="">
+                    </div>
+                    <div class="monster-burno relative">
+                        <img src="images/monster-burno.svg" class="animate-monster-burno absolute right-0 mr-[200px] -mt-[210px]" alt="">
+                    </div>
+                    <div class="monster-triba relative z-30">
+                        <img src="images/monster-triba.svg" class="animate-monster-triba absolute mt-[50px] -ml-[80px]" alt="">
+                    </div>
+                    <div class="monster-minks relative z-30">
+                        <img src="images/monster-minks.svg" class="animate-monster-minks absolute right-0 mt-[30px] -mr-24" alt="">
+                    </div>
+                </div>
                 <div class="col-span-8 col-start-3">
-                    <div class="flex flex-col justify-center">
+                    <div class="flex flex-col justify-center relative z-10">
                         <img class="mb-14" src="images/monster-block.svg" alt="Monsternary">
                     </div>
                     <div class="text-center">
@@ -51,7 +68,7 @@
 <!--end:header-->
 
 <!--start:about-->
-<section class="bg-secondary pt-40">
+<section class="py-48">
     <div class="container mx-auto">
         <div class="grid grid-cols-12 gap-[30px]">
             <div class="col-span-6">
@@ -66,8 +83,8 @@
                 </div>
             </div>
             <div class="col-span-5 col-start-7">
-                <div class="flex justify-end">
-                    <div class="w-[446px] h-[446px] bg-[#EDE3DD] rounded-xl"></div>
+                <div class="h-full flex items-center justify-center">
+                    <img src="images/about.svg" alt="">
                 </div>
             </div>
         </div>
@@ -75,8 +92,14 @@
 </section>
 <!--end:about-->
 
+<!-- start:atr -->
+<section class="relative h-60 bottom-0 -mb-[225px]">
+    <img src="images/atr.svg" class="absolute w-full h-full" alt="">
+</section>
+<!-- end:atr -->
+
 <!--start:monster lab-->
-<section class="bg-secondary pt-40 pb-[350px]">
+<section class="bg-[#EAEEF4] pt-80 pb-96">
     <div class="container mx-auto">
         <div class="grid grid-cols-12">
             <div class="col-span-6 col-start-4">
@@ -90,20 +113,25 @@
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-12">
-            <div class="col-span-4">
+        <div class="grid grid-cols-12 gap-[30px]">
+            <div class="col-span-3">
                 <div class="flex justify-center">
-                    <img class="air" src="images/monster_1.svg" alt="Air">
+                    <img src="images/monster_1.svg" alt="Air">
                 </div>
             </div>
-            <div class="col-span-4">
+            <div class="col-span-3">
                 <div class="flex justify-center">
-                    <img class="earth" src="images/monster_2.svg" alt="Earth">
+                    <img src="images/monster_2.svg" alt="Earth">
                 </div>
             </div>
-            <div class="col-span-4">
+            <div class="col-span-3">
                 <div class="flex justify-center">
-                    <img class="water" src="images/monster_3.svg" alt="Water">
+                    <img src="images/monster_3.svg" alt="Water">
+                </div>
+            </div>
+            <div class="col-span-3">
+                <div class="flex justify-center">
+                    <img src="images/monster_4.svg" alt="">
                 </div>
             </div>
         </div>
@@ -111,8 +139,14 @@
 </section>
 <!--end:monster lab-->
 
+<!-- start:atr -->
+<section class="relative h-60 bottom-0 -mt-[225px]">
+    <img src="images/atr.svg" class="absolute rotate-180 w-full h-full" alt="">
+</section>
+<!-- end:atr -->
+
 <!--start:gameplay-->
-<section class="bg-white -mt-52 py-52" style="clip-path: ellipse(120% 100% at 49% 100%);">
+<section class="bg-white py-56 bg-no-repeat bg-cover" style="background-image: url('images/bg-gameplay.svg');">
     <div class="container mx-auto">
         <div class="grid grid-cols-12">
             <div class="col-span-8 col-start-3">
@@ -123,26 +157,14 @@
                 </div>
                 <div class="grid grid-cols-12 gap-[30px]">
                     <div class="col-span-6">
-                        <div class="flex flex-col items-center justify-center text-center">
-                            <div class="w-full h-[350px] bg-[#EDE3DD] mb-8"></div>
-                            <div class="mb-2">
-                                <svg width="149" height="36" viewBox="0 0 149 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.00937653 34.0781L2.43125 6.42188L4.85313 2.125L12.3531 0.796875L15.7906 34.1562L10.0094 33.1406L9.57969 24.0391L6.22031 24.5469L5.7125 33.6875L0.00937653 34.0781ZM9.18906 19.6641L8.68125 11.1875L6.9625 11.5781L6.45469 19.9375L9.18906 19.6641ZM17.7531 34.3125L17.5969 2.16406L27.8703 1.26562L31.2297 7.82812L31.9328 28.4922L27.3625 34L17.7531 34.3125ZM25.8781 27.75L27.5188 24.9375L26.6594 12.9844L25.0969 11.0312L22.9875 11.6562L23.2609 27.7109L25.8781 27.75ZM39.7547 35.0938L36.0828 32.4375L33.7391 1.8125L39.9109 1.30469L41.4734 27.6719L43.1531 1.30469H48.6609L47.1375 32.1641L39.7547 35.0938ZM53.9828 34.625L50.5453 31.6953L50.975 2.125L64.0609 1.1875L64.5688 10.3672L56.4828 11.5781L56.4438 16.0312L63.7484 15.4062L63.2797 21.2656L56.4438 21.5781L56.3266 27.0859L64.0609 25.875L64.6859 33.1016L53.9828 34.625ZM75.0078 34.2344L72.5859 20.8359L72.3125 34.3516L67 33.9609L66.6484 1.85156L72.7422 1.61719L75.5547 18.1406L75.6328 1.65625L81.2578 1.85156L79.9297 34.5078L75.0078 34.2344ZM88.8063 33.9609L88.1422 10.7578L83.7672 11.4609L83.1422 2.63281L98.9625 1.42188L99.3531 10.0938L94.9781 10.25L94.7828 34.5469L88.8063 33.9609ZM105.573 34.5078L101.589 32.0859L101.238 1.85156L107.527 1.34375L107.644 27.5938L110.613 26.1484L110.378 1.10938L116.12 1.34375L115.769 33.7656L111.784 34.9375L111.394 31.9297L105.573 34.5078ZM118.981 34.2734L118.083 7.39844L119.606 1.89062L130.661 1.22656L132.731 12.6719L129.919 17.3203L132.731 18.4531L131.598 33.375L126.677 33.6094L127.848 22.0859L124.255 20.5625L124.763 33.7656L118.981 34.2734ZM126.052 15.6406L127.458 12.6719L126.325 10.7188L123.747 11.2266L123.981 16.1484L126.052 15.6406ZM138.131 34.625L134.694 31.6953L135.123 2.125L148.209 1.1875L148.717 10.3672L140.631 11.5781L140.592 16.0312L147.897 15.4062L147.428 21.2656L140.592 21.5781L140.475 27.0859L148.209 25.875L148.834 33.1016L138.131 34.625Z" fill="#040917"/>
-                                </svg>  
-                            </div>      
-                            <p class="text-text text-opacity-70">Battle Chimera and earn rare treasures useful for upgrading your Monster army!</p> 
-                        </div>                   
+                        <div class="flex justify-center items-center">
+                            <img src="images/gameplay-adventure.svg" alt="Gameplay Adventure">
+                        </div>       
                     </div>
                     <div class="col-span-6">
-                        <div class="flex flex-col items-center justify-center text-center">
-                            <div class="w-full h-[350px] bg-[#EDE3DD] mb-8"></div>
-                            <div class="mb-2">
-                                <svg width="159" height="35" viewBox="0 0 159 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.7625 33.3125L0.864059 6.59375L2.3875 1.08594L13.0516 0.34375L15.6687 11.4766L12.9344 23L7.27031 24.1328L7.54375 32.8047L1.7625 33.3125ZM9.34062 18.8984L10.3953 11.75L9.10625 9.67969L6.52812 9.95312L6.91875 19.4844L9.34062 18.8984ZM23.4906 34.0938L19.8187 31.4375L17.475 0.8125L23.6469 0.304688L25.2094 26.6719L26.8891 0.304688H32.3969L30.8734 31.1641L23.4906 34.0938ZM35.1797 33.3125L34.2812 6.59375L35.8047 1.08594L46.4687 0.34375L49.0859 11.4766L46.3516 23L40.6875 24.1328L40.9609 32.8047L35.1797 33.3125ZM42.7578 18.8984L43.8125 11.75L42.5234 9.67969L39.9453 9.95312L40.3359 19.4844L42.7578 18.8984ZM59.4172 33.1562L58.4016 6.51562L60.2766 0.890625L70.9797 0.265625L73.2453 11.2812L70.2375 16.3984L73.0891 17.5312L71.8391 32.5312L59.4172 33.1562ZM67.3859 26.125L68.2062 20.3047L65.5891 19.1719L64.1828 19.6406L64.5734 26.6328L67.3859 26.125ZM66.4094 14.9531L67.8156 12.0625L66.7609 9.71875L63.9484 10.1875L64.0656 15.3438L66.4094 14.9531ZM85.2469 32.9609V31.5547L78.4109 32.8438L75.5984 26.7891L76.1062 15.8906L84.1922 13.8984L84.075 9.40625L81.3797 9.67969L81.4969 12.4922L76.1062 13L75.2078 2.10156L83.5672 0.148438L89.8562 2.10156L90.3641 32.4531L85.2469 32.9609ZM84.5828 18.6641L81.6141 19.3281L81.4969 23.3125L85.0906 24.1719L84.5828 18.6641ZM97.9125 32.9609L97.2484 9.75781L92.8734 10.4609L92.2484 1.63281L108.069 0.421875L108.459 9.09375L104.084 9.25L103.889 33.5469L97.9125 32.9609ZM115.93 32.9609L115.266 9.75781L110.891 10.4609L110.266 1.63281L126.086 0.421875L126.477 9.09375L122.102 9.25L121.906 33.5469L115.93 32.9609ZM132.033 33.625L128.595 30.5391L128.361 2.80469L130.236 0.1875L135.314 1.16406L134.494 25.2266L142.111 24.4844L141.837 32.4531L132.033 33.625ZM147.433 33.625L143.995 30.6953L144.425 1.125L157.511 0.1875L158.019 9.36719L149.933 10.5781L149.894 15.0312L157.198 14.4062L156.73 20.2656L149.894 20.5781L149.777 26.0859L157.511 24.875L158.136 32.1016L147.433 33.625Z" fill="#040917"/>
-                                </svg>                                 
-                            </div>      
-                            <p class="text-text text-opacity-70">Become a legend through intense PvP arena battles! Join open tournaments for real money prizes!</p> 
-                        </div>  
+                        <div class="flex justify-center items-center">
+                            <img src="images/gameplay-pvp.svg" alt="Gameplay PvP Battle">
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -151,9 +173,43 @@
 </section>
 <!--end:gameplay-->
 
-<!--start:roadmap-->
-<section class="bg-secondary pt-80 pb-[343px]" style="clip-path: ellipse(120% 100% at 49% 100%);">
+<!-- start:atr -->
+<section class="relative h-60 bottom-0 -mb-[225px]">
+    <img src="images/atr.svg" class="absolute w-full h-full" alt="">
+</section>
+<!-- end:atr -->
+
+<!-- start:play to earn -->
+<section class="bg-[#EAEEF4] py-72">
     <div class="container mx-auto">
+        <div class="grid grid-cols-12">
+            <div class="col-span-6">
+                <div class="relative">
+                    <img src="images/play2earn.svg" alt="Play to Earn - Monsternary">
+                </div>
+            </div>
+            <div class="col-span-6">
+                <div class="h-full flex justify-center items-center">
+                    <img src="images/play2earn-card.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end:play to earn -->
+
+<!-- start:atr -->
+<section class="relative h-60 bottom-0 -mt-[225px]">
+    <img src="images/atr.svg" class="absolute rotate-180 w-full h-full" alt="">
+</section>
+<!-- end:atr -->
+
+<!--start:roadmap-->
+<section class="bg-white pt-36 pb-80 bg-no-repeat bg-contain" style="background-image: url('images/bg-roadmap.svg');">
+    <div class="container mx-auto">
+        <div class="relative">
+            <img class="absolute -mt-28 -ml-36" src="images/triba-footer.svg" alt="">
+        </div>
         <div class="grid grid-cols-12">
             <div class="col-span-12">
                 <div class="flex justify-center mb-16">
@@ -181,11 +237,16 @@
                     <svg class="absolute ml-11 -mt-7" width="244" height="49" viewBox="0 0 244 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 47.0957C1 47.0957 44.9541 27.0957 120.737 14.0957C196.52 1.0957 243 1.0957 243 1.0957" stroke="#ED313F" stroke-width="2" stroke-linecap="round"/>
                     </svg>                        
-                    <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="22" cy="22.0957" r="21" stroke="white" stroke-width="2"/>
-                        <circle cx="22" cy="22.0957" r="14" fill="#ED313F"/>
-                        <path d="M20.5 26C20.4343 26.0001 20.3693 25.9872 20.3086 25.962C20.2479 25.9369 20.1928 25.9 20.1465 25.8535L16.6465 22.3538C16.6 22.3074 16.5632 22.2523 16.5381 22.1916C16.5129 22.131 16.5 22.0659 16.5 22.0003C16.5 21.9346 16.5129 21.8696 16.538 21.8089C16.5632 21.7483 16.6 21.6932 16.6464 21.6467C16.6928 21.6003 16.748 21.5635 16.8086 21.5383C16.8693 21.5132 16.9343 21.5003 16.9999 21.5003C17.0656 21.5002 17.1306 21.5132 17.1913 21.5383C17.252 21.5634 17.3071 21.6002 17.3535 21.6467L20.5 24.7929L27.1464 18.1467C27.2402 18.053 27.3673 18.0004 27.4999 18.0005C27.6324 18.0005 27.7595 18.0532 27.8533 18.1469C27.947 18.2406 27.9997 18.3677 27.9997 18.5003C27.9998 18.6328 27.9472 18.76 27.8536 18.8538L20.8536 25.8535C20.8072 25.9 20.7521 25.9369 20.6914 25.962C20.6307 25.9871 20.5657 26 20.5 26V26Z" fill="white"/>
-                    </svg>                        
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="21" stroke="#ED313F" stroke-width="2"/>
+                        <circle cx="22" cy="22" r="14" fill="#ED313F"/>
+                        <mask id="path-3-outside-1_120_67" maskUnits="userSpaceOnUse" x="15.5" y="16.9048" width="14" height="10" fill="black">
+                        <rect fill="white" x="15.5" y="16.9048" width="14" height="10"/>
+                        <path d="M20.5 25.9043C20.4343 25.9044 20.3693 25.8915 20.3086 25.8663C20.248 25.8412 20.1928 25.8043 20.1465 25.7578L16.6465 22.2581C16.6 22.2117 16.5632 22.1566 16.5381 22.0959C16.5129 22.0353 16.5 21.9702 16.5 21.9046C16.5 21.8389 16.5129 21.7739 16.538 21.7132C16.5632 21.6526 16.6 21.5975 16.6464 21.551C16.6928 21.5046 16.748 21.4678 16.8086 21.4426C16.8693 21.4175 16.9343 21.4046 16.9999 21.4045C17.0656 21.4045 17.1306 21.4175 17.1913 21.4426C17.252 21.4677 17.3071 21.5045 17.3535 21.551L20.5 24.6972L27.1464 18.051C27.2402 17.9573 27.3673 17.9047 27.4999 17.9048C27.6324 17.9048 27.7595 17.9575 27.8533 18.0512C27.947 18.1449 27.9997 18.272 27.9997 18.4046C27.9998 18.5371 27.9472 18.6643 27.8536 18.7581L20.8536 25.7578C20.8072 25.8043 20.7521 25.8412 20.6914 25.8663C20.6307 25.8914 20.5657 25.9043 20.5 25.9043Z"/>
+                        </mask>
+                        <path d="M20.5 25.9043C20.4343 25.9044 20.3693 25.8915 20.3086 25.8663C20.248 25.8412 20.1928 25.8043 20.1465 25.7578L16.6465 22.2581C16.6 22.2117 16.5632 22.1566 16.5381 22.0959C16.5129 22.0353 16.5 21.9702 16.5 21.9046C16.5 21.8389 16.5129 21.7739 16.538 21.7132C16.5632 21.6526 16.6 21.5975 16.6464 21.551C16.6928 21.5046 16.748 21.4678 16.8086 21.4426C16.8693 21.4175 16.9343 21.4046 16.9999 21.4045C17.0656 21.4045 17.1306 21.4175 17.1913 21.4426C17.252 21.4677 17.3071 21.5045 17.3535 21.551L20.5 24.6972L27.1464 18.051C27.2402 17.9573 27.3673 17.9047 27.4999 17.9048C27.6324 17.9048 27.7595 17.9575 27.8533 18.0512C27.947 18.1449 27.9997 18.272 27.9997 18.4046C27.9998 18.5371 27.9472 18.6643 27.8536 18.7581L20.8536 25.7578C20.8072 25.8043 20.7521 25.8412 20.6914 25.8663C20.6307 25.8914 20.5657 25.9043 20.5 25.9043Z" fill="white"/>
+                        <path d="M20.1465 25.7578L20.8545 25.0517L20.8536 25.0507L20.1465 25.7578ZM16.6465 22.2581L17.3536 21.551L17.3535 21.5509L16.6465 22.2581ZM17.3535 21.551L18.0606 20.8438L18.0606 20.8438L17.3535 21.551ZM20.5 24.6972L19.7929 25.4043L20.5 26.1113L21.2071 25.4043L20.5 24.6972ZM27.1464 18.051L26.4398 17.3434L26.4393 17.3439L27.1464 18.051ZM27.8536 18.7581L28.5607 19.4652L28.5612 19.4646L27.8536 18.7581ZM20.8536 25.7578L20.1465 25.0507L20.1457 25.0514L20.8536 25.7578ZM20.4986 24.9043C20.5647 24.9042 20.6302 24.9172 20.6913 24.9424L19.926 26.7902C20.1084 26.8658 20.3039 26.9045 20.5013 26.9043L20.4986 24.9043ZM20.6913 24.9424C20.7524 24.9677 20.8078 25.0049 20.8545 25.0517L19.4384 26.464C19.5779 26.6038 19.7435 26.7147 19.926 26.7902L20.6913 24.9424ZM20.8536 25.0507L17.3536 21.551L15.9394 22.9652L19.4394 26.465L20.8536 25.0507ZM17.3535 21.5509C17.4 21.5974 17.4368 21.6525 17.4619 21.7132L15.6142 22.4787C15.6896 22.6607 15.8001 22.826 15.9394 22.9653L17.3535 21.5509ZM17.4619 21.7132C17.4871 21.7738 17.5 21.8388 17.5 21.9045L15.5 21.9047C15.5 22.1016 15.5388 22.2967 15.6142 22.4787L17.4619 21.7132ZM17.5 21.9045C17.5 21.9702 17.4871 22.0352 17.462 22.0958L15.6141 21.3306C15.5388 21.5126 15.5 21.7077 15.5 21.9047L17.5 21.9045ZM17.462 22.0958C17.4368 22.1565 17.4 22.2116 17.3536 22.2581L15.9392 20.844C15.8 20.9833 15.6895 21.1486 15.6141 21.3306L17.462 22.0958ZM17.3536 22.2581C17.3072 22.3045 17.252 22.3413 17.1914 22.3665L16.4258 20.5188C16.2439 20.5942 16.0785 20.7047 15.9392 20.844L17.3536 22.2581ZM17.1914 22.3665C17.1307 22.3916 17.0657 22.4045 17 22.4045L16.9999 20.4045C16.8029 20.4046 16.6078 20.4434 16.4258 20.5188L17.1914 22.3665ZM17 22.4045C16.9344 22.4046 16.8693 22.3916 16.8087 22.3665L17.5739 20.5187C17.3919 20.4433 17.1968 20.4045 16.9999 20.4045L17 22.4045ZM16.8087 22.3665C16.748 22.3414 16.6929 22.3046 16.6465 22.2581L18.0606 20.8438C17.9213 20.7045 17.7559 20.594 17.5739 20.5187L16.8087 22.3665ZM16.6464 22.2581L19.7929 25.4043L21.2071 23.99L18.0606 20.8438L16.6464 22.2581ZM21.2071 25.4043L27.8535 18.7581L26.4393 17.3439L19.7929 23.99L21.2071 25.4043ZM27.853 18.7586C27.7592 18.8522 27.6321 18.9048 27.4996 18.9048L27.5002 16.9048C27.1026 16.9047 26.7212 17.0624 26.4398 17.3434L27.853 18.7586ZM27.4996 18.9048C27.367 18.9047 27.2399 18.8521 27.1462 18.7584L28.5604 17.3441C28.2792 17.0629 27.8979 16.9049 27.5002 16.9048L27.4996 18.9048ZM27.1462 18.7584C27.0525 18.6646 26.9998 18.5375 26.9997 18.405L28.9997 18.4042C28.9996 18.0065 28.8415 17.6252 28.5604 17.3441L27.1462 18.7584ZM26.9997 18.405C26.9997 18.2725 27.0523 18.1453 27.1459 18.0515L28.5612 19.4646C28.8422 19.1833 28.9999 18.8018 28.9997 18.4042L26.9997 18.405ZM27.1465 18.051L20.1465 25.0507L21.5607 26.465L28.5607 19.4652L27.1465 18.051ZM20.1457 25.0514C20.1924 25.0047 20.2478 24.9677 20.3088 24.9424L21.074 26.7902C21.2563 26.7147 21.422 26.6039 21.5614 26.4642L20.1457 25.0514ZM20.3088 24.9424C20.3698 24.9171 20.4351 24.9042 20.5012 24.9043L20.4988 26.9043C20.6962 26.9045 20.8917 26.8657 21.074 26.7902L20.3088 24.9424Z" fill="white" mask="url(#path-3-outside-1_120_67)"/>
+                    </svg>                                                
                 </div>
                 <ul class="flex flex-col gap-3">
                     <li class="flex items-center">
@@ -225,10 +286,10 @@
                     <svg class="absolute ml-11 -mt-7" width="244" height="49" viewBox="0 0 244 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 47.0957C1 47.0957 44.9541 27.0957 120.737 14.0957C196.52 1.0957 243 1.0957 243 1.0957" stroke="#ED313F" stroke-width="2" stroke-linecap="round"/>
                     </svg>                        
-                    <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="22" cy="22.0957" r="21" stroke="white" stroke-width="2"/>
-                        <circle cx="22" cy="22.0957" r="14" fill="white"/>
-                    </svg>                                              
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="21" stroke="#ED313F" stroke-width="2"/>
+                        <circle cx="22" cy="22" r="13" stroke="#ED313F" stroke-width="2"/>
+                    </svg>                                                                     
                 </div>
                 <ul class="flex flex-col gap-3">
                     <li class="flex items-center">
@@ -268,10 +329,10 @@
                     <svg class="absolute ml-11 -mt-7" width="244" height="49" viewBox="0 0 244 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 47.0957C1 47.0957 44.9541 27.0957 120.737 14.0957C196.52 1.0957 243 1.0957 243 1.0957" stroke="#ED313F" stroke-width="2" stroke-linecap="round"/>
                     </svg>                        
-                    <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="22" cy="22.0957" r="21" stroke="white" stroke-width="2"/>
-                        <circle cx="22" cy="22.0957" r="14" fill="white"/>
-                    </svg>                                              
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="21" stroke="#ED313F" stroke-width="2"/>
+                        <circle cx="22" cy="22" r="13" stroke="#ED313F" stroke-width="2"/>
+                    </svg>                                             
                 </div>
                 <ul class="flex flex-col gap-3">
                     <li class="flex items-center">
@@ -314,9 +375,9 @@
                     </svg>                                                
                 </div>
                 <div class="relative mb-3">                   
-                    <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="22" cy="22.0957" r="21" stroke="white" stroke-width="2"/>
-                        <circle cx="22" cy="22.0957" r="14" fill="white"/>
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22" cy="22" r="21" stroke="#ED313F" stroke-width="2"/>
+                        <circle cx="22" cy="22" r="13" stroke="#ED313F" stroke-width="2"/>
                     </svg>                                              
                 </div>
                 <ul class="flex flex-col gap-3">
@@ -347,19 +408,28 @@
                 </ul>
             </div>
         </div>
+        <div class="relative -mt-28 -mr-24">
+            <img class="absolute right-0" src="images/minks-footer.svg" alt="">
+        </div>
     </div>
 </section>
 <!--end:roadmap-->
 
+<!-- start:atr -->
+<section class="relative h-64 bottom-0 -mb-4">
+    <img src="images/atr-footer.svg" class="absolute w-full h-full" alt="">
+</section>
+<!-- end:atr -->
+
 <!--start:footer-->
-<footer class="bg-primary py-10">
+<footer class="bg-[#664939] py-10">
     <div class="container mx-auto">
         <div class="grid grid-cols-12">
             <div class="col-span-3">
                 <a href="index.html"><img class="transition hover:scale-110 duration-300 ease-in-out" src="images/logo-white.svg" alt="Monsternary"></a>
             </div>
             <div class="col-span-9">
-                <div class="flex items-center justify-end gap-x-10">
+                <div class="h-full flex items-center justify-end gap-x-10">
                     <ul class="flex items-center text-white gap-x-8">
                         <li><a href="#" class="leading-5 hover:underline">Terms & Conditions</a></li>
                         <li><a href="#" class="leading-5 hover:underline">Privacy Policy</a></li>

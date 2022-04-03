@@ -11,7 +11,7 @@
     html,
     body { @apply m-0 p-0; }
 
-    body { @apply font-inter text-base; }
+    body { @apply font-inter text-base overflow-x-hidden; }
 
     a { @apply font-inter text-base; }
 }
@@ -34,21 +34,47 @@
         background-image: url('../images/bg-btn-lg-hover.svg');
     }
 
-    .air {
-        animation: bounce 2s infinite;
+    .animate-monster-liquion {
+        animation: bounceX 4s infinite;
     }
 
-    .earth {
-        animation: bounce 4s infinite;
+    .animate-monster-burno {
+        animation: bounceXmin 4s infinite;
     }
 
-    .water {
-        animation: bounce 1s infinite;
+    .animate-monster-triba {
+        animation: bounceping 6s infinite;
+    }
+
+    .animate-monster-minks {
+        animation: minks 4s infinite;
+    }
+
+    @keyframes minks {
+        0%, 100% {
+            transform: translateY(0) scale(1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+        }
+        50% {
+            transform: translateY(-1%) scale(1.1);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+        }
+    }
+
+    @keyframes bounceping {
+        0%, 100% {
+            transform: translateX(-20%);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+        }
+        50% {
+            transform: translateX(5%);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+        }
     }
 
     @keyframes bounce {
         0%, 100% {
-          transform: translateY(-25%);
+          transform: translateY(-5%);
           animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
         }
         50% {
@@ -56,4 +82,35 @@
           animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
         }
     }
+
+    @keyframes bounceX {
+        0%, 100% {
+            transform: translateX(-5%);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+        }
+        50% {
+            transform: translateX(0);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+        }
+    }
+
+    @keyframes bounceXmin {
+        0%, 100% {
+            transform: translateX(5%);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+        }
+        50% {
+            transform: translateX(0);
+            animation-timing-function: cubic-bezier(0.42,0,0.58,1);
+        }
+    }
+}
+
+@layer utilities {
+    /* Animation Duration */
+    .animation-duration { animation-duration: 1s; }
+    .animation-duration-2 { animation-duration: 2s; }
+    .animation-duration-3 { animation-duration: 3s; }
+    .animation-duration-4 { animation-duration: 4s; }
+    .animation-duration-5 { animation-duration: 5s; }
 }
