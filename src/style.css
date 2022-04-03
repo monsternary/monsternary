@@ -50,7 +50,7 @@
         animation: minks 4s infinite;
     }
 
-    @keyframes minks {
+    @keyframes minks { 
         0%, 100% {
             transform: translateY(0) scale(1);
             animation-timing-function: cubic-bezier(0.42,0,0.58,1);
