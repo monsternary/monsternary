@@ -50,6 +50,15 @@
         animation: minks 4s infinite;
     }
 
+    @media (max-width: 767.98px) {
+        .animate-monster-liquion,
+        .animate-monster-burno,
+        .animate-monster-triba,
+        .animate-monster-minks {
+            animation: none;
+        }
+    }
+
     @keyframes minks { 
         0%, 100% {
             transform: translateY(0) scale(1);

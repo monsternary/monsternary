@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./dist/**/*.{html,js}'],
+  content: ['./dist/**/*.{html,js}', './dist/js/*.js'],
   theme: {
     fontFamily: {
       'inter': ['Inter', 'sans-serif']
@@ -13,5 +13,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin'),
+  ],
 }
